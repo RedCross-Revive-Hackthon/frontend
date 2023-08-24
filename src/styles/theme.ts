@@ -1,7 +1,7 @@
 import { DefaultTheme } from 'styled-components/dist/types';
 
 const colors = {
-  redorange_gra_00: 'linear-gradient(180deg, #FE0000 0%, #FF7000 100%))',
+  redorange_gra_00: 'linear-gradient(180deg, #FE0000 0%, #FF7000 100%)',
   black: '#000000',
   deepred: '#FF0A00',
   white: '#FFFFFF',
