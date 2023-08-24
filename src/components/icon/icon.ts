@@ -5,6 +5,7 @@ import { ReactComponent as Close } from '../../assets/svgs/close.svg';
 import { ReactComponent as Community } from '../../assets/svgs/community.svg';
 import { ReactComponent as DefaultProfileImg } from '../../assets/svgs/defaultProfile.svg';
 import { ReactComponent as DefaultUser } from '../../assets/svgs/defaultUser.svg';
+import { ReactComponent as DetailPost } from '../../assets/svgs/detailPost.svg';
 import { ReactComponent as Down } from '../../assets/svgs/down.svg';
 import { ReactComponent as Event } from '../../assets/svgs/event.svg';
 import { ReactComponent as FirstPlace } from '../../assets/svgs/firstPlace.svg';
@@ -35,6 +36,7 @@ import { ReactComponent as Up } from '../../assets/svgs/up.svg';
 import { ReactComponent as Volunteer } from '../../assets/svgs/volunteer.svg';
 
 export {
+  DetailPost,
   GivePost1,
   GivePost2,
   GivePost3,
