@@ -1,8 +1,7 @@
+import { ReactNode } from 'react';
 import { styled } from 'styled-components';
-import { theme } from '../styles/theme';
-
 interface ValueProps {
-  children: string | string[];
+  children: ReactNode;
   font: string;
   color?: string;
 }
@@ -41,6 +40,8 @@ const TextWrapper = styled.span<{ $font: string; $color: string }>`
         return theme.fonts.point1;
       case 'point2':
         return theme.fonts.point2;
+      case 'point3':
+        return theme.fonts.point3;
       default:
         return '';
     }
