@@ -3,8 +3,10 @@ import { DefaultUser, FirstPlace, SecondPlace, ThirdPlace } from '../icon/icon';
 import React from 'react';
 import Text from '../common/Text';
 import hideName from '../../utils/hideName';
+import { modalState } from '../../states/modalState';
 import { styled } from 'styled-components';
 import { theme } from '../../styles/theme';
+import { useRecoilState } from 'recoil';
 
 const PRIZE_LIST = [
   {
@@ -28,9 +30,14 @@ const PRIZE_LIST = [
 ];
 
 const PrizeList = () => {
+  const [modalOn, setModalOn] = useRecoilState(modalState);
+
+  const handleModal = () => {
+    setModalOn(!modalOn);
+  };
   return (
     <PrizeListWrapper>
-      <SecondPlaceWrapper>
+      <SecondPlaceWrapper onClick={handleModal}>
         <SecondPlace />
         <UserScoreInfo>
           <SmallDefaultUser />
@@ -45,7 +52,7 @@ const PrizeList = () => {
           </Text>
         </UserScoreInfo>
       </SecondPlaceWrapper>
-      <FirstPlaceWrapper>
+      <FirstPlaceWrapper onClick={handleModal}>
         <FirstPlace />
         <UserScoreInfo>
           <DefaultUser />
@@ -60,7 +67,7 @@ const PrizeList = () => {
           </Text>
         </UserScoreInfo>
       </FirstPlaceWrapper>
-      <ThirdPlaceWrapper>
+      <ThirdPlaceWrapper onClick={handleModal}>
         <ThirdPlace />
         <UserScoreInfo>
           <SmallDefaultUser />
@@ -86,18 +93,21 @@ const PrizeListWrapper = styled.main`
   gap: 0.4rem;
   align-items: end;
   margin-top: 2.4rem;
+  cursor: pointer;
 `;
 
 const FirstPlaceWrapper = styled.div`
   display: flex;
   position: relative;
   flex-direction: column;
+  cursor: pointer;
 `;
 
 const SecondPlaceWrapper = styled.div`
   display: flex;
   position: relative;
   flex-direction: column;
+  cursor: pointer;
 `;
 
 const ThirdPlaceWrapper = styled.div`

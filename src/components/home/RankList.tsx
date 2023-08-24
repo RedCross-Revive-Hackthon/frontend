@@ -2,7 +2,9 @@ import React, { useState } from 'react';
 
 import Modal from './Modal';
 import Rank from './Rank';
+import { modalState } from '../../states/modalState';
 import { styled } from 'styled-components';
+import { useRecoilState } from 'recoil';
 
 const RANK_LIST = [
   {
@@ -76,9 +78,8 @@ const RANK_LIST = [
     state: 'up',
   },
 ];
-
 const RankList = () => {
-  const [modalOn, setModalOn] = useState(false);
+  const [modalOn, setModalOn] = useRecoilState(modalState);
 
   const handleModal = () => {
     setModalOn(!modalOn);

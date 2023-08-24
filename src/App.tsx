@@ -1,4 +1,5 @@
 import GlobalStyle from './styles/globalStyles';
+import { RecoilRoot } from 'recoil';
 import Router from './Router';
 import { ThemeProvider } from 'styled-components';
 import { styled } from 'styled-components';
@@ -40,7 +41,7 @@ function App() {
     };
   }, []);
   return (
-    <>
+    <RecoilRoot>
       <ThemeProvider theme={theme}>
         <ThemeProvider theme={theme}>
           <GlobalStyle />
@@ -51,7 +52,7 @@ function App() {
           </TempBackground>
         </ThemeProvider>
       </ThemeProvider>
-    </>
+    </RecoilRoot>
   );
 }
 
