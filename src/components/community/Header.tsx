@@ -1,4 +1,3 @@
-import React from 'react';
 import Text from '../common/Text';
 import { communityTapState } from '../../states/communityTapState';
 import { styled } from 'styled-components';

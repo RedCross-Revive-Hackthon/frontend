@@ -1,7 +1,6 @@
 import { GivePost1, GivePost2, GivePost3, GivePost4, GivePost5 } from '../icon/icon';
 
 import { Link } from 'react-router-dom';
-import React from 'react';
 import { styled } from 'styled-components';
 
 const GivePosts = () => {

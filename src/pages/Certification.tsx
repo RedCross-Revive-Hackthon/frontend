@@ -1,7 +1,6 @@
 import { isAndroid, isIOS } from 'react-device-detect';
 
 import CerificationImg from '../assets/svgs/blood_certification.png';
-import React from 'react';
 import Text from '../components/common/Text';
 import html2canvas from 'html2canvas';
 import styled from 'styled-components';

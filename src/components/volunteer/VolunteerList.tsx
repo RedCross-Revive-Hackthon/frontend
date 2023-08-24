@@ -1,4 +1,3 @@
-import React from 'react';
 import Volunteer1 from '../../assets/images/volunteer1.png';
 import Volunteer2 from '../../assets/images/volunteer2.png';
 import Volunteer3 from '../../assets/images/volunteer3.png';
@@ -8,6 +7,7 @@ import Volunteer6 from '../../assets/images/volunteer6.png';
 import Volunteer7 from '../../assets/images/volunteer7.png';
 import Volunteer8 from '../../assets/images/volunteer8.png';
 import { styled } from 'styled-components';
+
 const VolunteerList = () => {
   return (
     <VolunteerListWrapper>

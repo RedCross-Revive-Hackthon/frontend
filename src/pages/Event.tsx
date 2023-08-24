@@ -1,5 +1,4 @@
 import { Checked, NotChecked } from '../components/icon/icon';
-import React, { useState } from 'react';
 
 import EventImg from '../assets/images/eventImg.png';
 import Footer from '../components/common/Footer';
@@ -7,6 +6,7 @@ import attendanceBg from '../assets/images/출석체크배�
 import attendanceMessage from '../assets/images/출석체크문구.png';
 import attendanceTitle from '../assets/images/출석체크타이틀.png';
 import { styled } from 'styled-components';
+import { useState } from 'react';
 
 const Event = () => {
   const [isClicked, setIsClicked] = useState(false);

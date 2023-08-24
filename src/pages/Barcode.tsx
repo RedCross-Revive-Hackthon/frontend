@@ -1,5 +1,3 @@
-import React, { useState } from 'react';
-
 import BarcodeCamera from '../components/barcode/BarcodeCamera';
 import Text from '../components/common/Text';
 import { styled } from 'styled-components';

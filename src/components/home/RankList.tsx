@@ -1,5 +1,3 @@
-import React, { useState } from 'react';
-
 import Modal from './Modal';
 import Rank from './Rank';
 import { modalState } from '../../states/modalState';

@@ -1,6 +1,5 @@
 import { HelpPost1, HelpPost2, HelpPost3, HelpPost4, HelpPost5 } from '../icon/icon';
 
-import React from 'react';
 import { styled } from 'styled-components';
 
 const HelpPosts = () => {
