@@ -31,6 +31,13 @@ const TextWrapper = styled.span<{ $font: string; $color: string }>`
         return theme.fonts.head3;
       case 'head4':
         return theme.fonts.head4;
+      case 'head5':
+        return theme.fonts.head5;
+      case 'body3':
+        return theme.fonts.body3;
+      case 'body4':
+        return theme.fonts.body4;
+
       case 'name1':
         return theme.fonts.name1;
       case 'name2':
