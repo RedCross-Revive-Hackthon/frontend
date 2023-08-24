@@ -4,7 +4,6 @@ import { IconArea } from '../icon/icon';
 import { Link } from 'react-router-dom';
 import { PlusBtn } from '../icon/icon';
 import React from 'react';
-import Text from './Text';
 import { styled } from 'styled-components';
 
 const Footer = () => {

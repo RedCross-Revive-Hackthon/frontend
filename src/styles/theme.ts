@@ -39,7 +39,7 @@ const fonts = {
   head2: FONT({ family: 'Pretendard Variable', weight: 400, size: 1.4, letterSpacing: -0.03, lineHeight: 'normal' }),
   head3: FONT({ family: 'Pretendard Variable', weight: 600, size: 2, letterSpacing: -0.03, lineHeight: 'normal' }),
   head4: FONT({ family: 'Pretendard Variable', weight: 700, size: 2.8, letterSpacing: -0.03, lineHeight: 'normal' }),
-  head5: FONT({ family: 'Pretendard Variable', weight: 600, size: 2, letterSpacing: -0.03, lineHeight: 'normal' }),
+  head5: FONT({ family: 'Pretendard Variable', weight: 600, size: 1.6, letterSpacing: -0.03, lineHeight: 'normal' }),
 
   body2: FONT({ family: 'Pretendard Variable', weight: 500, size: 1.6, letterSpacing: -0.03, lineHeight: 'normal' }),
   body3: FONT({ family: 'Pretendard Variable', weight: 400, size: 1.4, letterSpacing: -0.03, lineHeight: 'normal' }),
