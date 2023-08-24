@@ -34,6 +34,7 @@ import { ReactComponent as MyPage } from '../../assets/svgs/myPage.svg';
 import { ReactComponent as MypageBackground } from '../../assets/svgs/mypageBackground.svg';
 import { ReactComponent as NotChecked } from '../../assets/svgs/notChecked.svg';
 import { ReactComponent as PlusBtn } from '../../assets/svgs/PlusBtn.svg';
+import { ReactComponent as PostBtn } from '../../assets/svgs/postBtn.svg';
 import { ReactComponent as SecondPlace } from '../../assets/svgs/secondPlace.svg';
 import { ReactComponent as ThirdPlace } from '../../assets/svgs/thirdPlace.svg';
 import { ReactComponent as Trophy } from '../../assets/svgs/trophy.svg';
@@ -45,6 +46,7 @@ export {
   Checked,
   NotChecked,
   DetailPost,
+  PostBtn,
   VolunteerRed,
   HomeRed,
   EventRed,

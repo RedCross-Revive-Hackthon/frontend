@@ -3,6 +3,7 @@ import { Community, CommunityRed, Event, EventRed, Home, HomeRed, Volunteer, Vol
 import { IconArea } from '../icon/icon';
 import { Link } from 'react-router-dom';
 import { PlusBtn } from '../icon/icon';
+import { PostBtn } from '../icon/icon';
 import React from 'react';
 import { styled } from 'styled-components';
 import { theme } from '../../styles/theme';
@@ -24,9 +25,15 @@ const Footer = () => {
         </IconSection>
       </IconContainer>
       <IconArea />
-      <Link to="/barcode">
-        <StyledPlusBtn />
-      </Link>
+      {location === '/community' ? (
+        <Link to="#">
+          <StyledPostBtn />
+        </Link>
+      ) : (
+        <Link to="/barcode">
+          <StyledPlusBtn />
+        </Link>
+      )}
     </FooterWrapper>
   );
 };
@@ -40,6 +47,13 @@ const FooterWrapper = styled.footer`
 `;
 
 const StyledPlusBtn = styled(PlusBtn)`
+  position: absolute;
+  bottom: 5.3rem;
+  left: 50%;
+  transform: translate(-3.7rem, 0);
+`;
+
+const StyledPostBtn = styled(PostBtn)`
   position: absolute;
   bottom: 5.3rem;
   left: 50%;
