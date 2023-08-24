@@ -1,6 +1,7 @@
 import { BtnAlarm, DefaultProfileImg, IcnRank, IcnScore } from '../icon/icon';
 
 import Text from '../common/Text';
+import mypageBackgroundImg from '../../assets/svgs/mypageBackgroundImg.png';
 import styled from 'styled-components';
 import { theme } from '../../styles/theme';
 
