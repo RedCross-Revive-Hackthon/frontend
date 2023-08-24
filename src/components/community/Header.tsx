@@ -13,7 +13,7 @@ const Header = () => {
 
   return (
     <HeaderWrapper>
-      <HeaderTap onClick={handleTap} isCurrentTap={currentTap === false}>
+      <HeaderTap onClick={handleTap} $isCurrentTap={currentTap === false}>
         {currentTap === false ? (
           <Text font="head5" color={theme.colors.black}>
             헌혈증서 나눔
@@ -24,7 +24,7 @@ const Header = () => {
           </Text>
         )}
       </HeaderTap>
-      <HeaderTap onClick={handleTap} isCurrentTap={currentTap === true}>
+      <HeaderTap onClick={handleTap} $isCurrentTap={currentTap === true}>
         {currentTap === true ? (
           <Text font="head5" color={theme.colors.black}>
             지정헌혈 구인
@@ -44,10 +44,11 @@ export default Header;
 const HeaderWrapper = styled.header`
   display: flex;
   position: absolute;
+  margin-top: 1.2rem;
   width: 100%;
 `;
 
-const HeaderTap = styled.div<{ isCurrentTap: boolean }>`
+const HeaderTap = styled.div<{ $isCurrentTap: boolean }>`
   display: flex;
   justify-content: center;
   border-bottom: 0.2rem solid ${(props) => (props.isCurrentTap ? theme.colors.deepred : theme.colors.gray01)};
