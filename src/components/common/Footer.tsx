@@ -30,15 +30,15 @@ export default Footer;
 
 const FooterWrapper = styled.footer`
   position: fixed;
-  bottom: -86vh;
+  bottom: 0;
   width: 37.5rem;
-  height: 100%;
 `;
 
 const StyledPlusBtn = styled(PlusBtn)`
   position: absolute;
-  bottom: 69.7rem;
-  left: 15.2rem;
+  bottom: 5.3rem;
+  left: 50%;
+  transform: translate(-3.7rem, 0);
 `;
 
 const IconContainer = styled.div`
