@@ -1,6 +1,7 @@
 import { Community, Event, Home, Volunteer } from '../icon/icon';
 
 import { IconArea } from '../icon/icon';
+import { Link } from 'react-router-dom';
 import { PlusBtn } from '../icon/icon';
 import React from 'react';
 import Text from './Text';
@@ -19,9 +20,10 @@ const Footer = () => {
           <Volunteer />
         </IconSection>
       </IconContainer>
-
       <IconArea />
-      <StyledPlusBtn />
+      <Link to="/barcode">
+        <StyledPlusBtn />
+      </Link>
     </FooterWrapper>
   );
 };
