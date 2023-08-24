@@ -39,7 +39,7 @@ const MypageHeader = () => {
           </ScoreSection>
           <ScoreTextWrapper>
             <Text font={'head5'} color={theme.colors.white}>
-              8,240
+              9,800
             </Text>
           </ScoreTextWrapper>
         </ScoreContainer>
@@ -55,7 +55,7 @@ const MypageHeader = () => {
           </ScoreSection>
           <ScoreTextWrapper>
             <Text font={'body4'} color={theme.colors.white}>
-              37등
+              4등
             </Text>
           </ScoreTextWrapper>
         </ScoreContainer>

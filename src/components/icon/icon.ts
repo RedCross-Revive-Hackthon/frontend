@@ -30,6 +30,7 @@ import { ReactComponent as IcnScore } from '../../assets/svgs/icnScore.svg';
 import { ReactComponent as IconArea } from '../../assets/svgs/iconArea.svg';
 import { ReactComponent as Instagram } from '../../assets/svgs/instagram.svg';
 import { ReactComponent as Invite } from '../../assets/svgs/invite.svg';
+import { ReactComponent as Logo } from '../../assets/svgs/logo.svg';
 import { ReactComponent as MyPage } from '../../assets/svgs/myPage.svg';
 import { ReactComponent as NotChecked } from '../../assets/svgs/notChecked.svg';
 import { ReactComponent as PlusBtn } from '../../assets/svgs/plusBtn.svg';
@@ -42,6 +43,7 @@ import { ReactComponent as Volunteer } from '../../assets/svgs/volunteer.svg';
 import { ReactComponent as VolunteerRed } from '../../assets/svgs/volunteerRed.svg';
 
 export {
+  Logo,
   Checked,
   NotChecked,
   DetailPost,
