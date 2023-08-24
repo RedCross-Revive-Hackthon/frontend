@@ -42,10 +42,12 @@ function App() {
   return (
     <>
       <ThemeProvider theme={theme}>
-        <GlobalStyle />
-        <MobileWrapper>
-          <Router />
-        </MobileWrapper>
+        <ThemeProvider theme={theme}>
+          <GlobalStyle />
+          <MobileWrapper>
+            <Router />
+          </MobileWrapper>
+        </ThemeProvider>
       </ThemeProvider>
     </>
   );

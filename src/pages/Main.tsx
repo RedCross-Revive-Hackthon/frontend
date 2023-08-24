@@ -1,9 +1,9 @@
 import React from 'react';
-import MainComponents from '../components/MainComponents';
+import ThemeTest from '../components/ThemeTest';
 const Main = () => {
   return (
     <div>
-      <div>react</div> <MainComponents></MainComponents>
+      <ThemeTest></ThemeTest>
     </div>
   );
 };
