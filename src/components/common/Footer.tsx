@@ -25,7 +25,7 @@ const Footer = () => {
         </IconSection>
       </IconContainer>
       <IconArea />
-      {location === '/community' ? (
+      {location === '/community' || location === '/community/give/1' ? (
         <Link to="#">
           <StyledPostBtn />
         </Link>
@@ -42,7 +42,7 @@ export default Footer;
 
 const FooterWrapper = styled.footer`
   position: fixed;
-  bottom: 0;
+  bottom: -0.2rem;
   width: 37.5rem;
 `;
 

@@ -1,7 +1,8 @@
+import { Down, Up } from '../icon/icon';
+
 import { DefaultUser } from '../icon/icon';
 import React from 'react';
 import Text from '../common/Text';
-import { Up } from '../icon/icon';
 import hideName from '../../utils/hideName';
 import { styled } from 'styled-components';
 import { theme } from '../../styles/theme';
@@ -35,7 +36,7 @@ const Rank = ({ onClick, name, department, score, rank, state }: RankProps) => {
         <Text font="point3" color={theme.colors.black}>
           {score.toLocaleString()}점
         </Text>
-        <Up />
+        {state === 'up' ? <Up /> : <Down />}
       </RightSide>
     </RankWrapper>
   );
