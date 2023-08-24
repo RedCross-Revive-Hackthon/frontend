@@ -5,8 +5,8 @@ import { styled } from 'styled-components';
 import { theme } from '../../styles/theme';
 
 const dummy = {
-  university: '적십자대학교',
-  name: '홍길동',
+  university: '가톨릭대학교',
+  name: '이재훈',
   rank: '4',
 };
 
