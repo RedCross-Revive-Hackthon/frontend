@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
 import BarcodeCamera from '../components/barcode/BarcodeCamera';
+import { Link } from 'react-router-dom';
 import Text from '../components/common/Text';
 import { styled } from 'styled-components';
 import { theme } from '../styles/theme';
@@ -14,11 +15,13 @@ const Barcode = () => {
         </Text>
       </BarcodeTitle>
       <BarcodeCamera />
-      <ConfirmBtn>
-        <Text font="point2" color={theme.colors.white}>
-          인식 완료
-        </Text>
-      </ConfirmBtn>
+      <Link to="/certification">
+        <ConfirmBtn>
+          <Text font="point2" color={theme.colors.white}>
+            헌혈증 등록하기
+          </Text>
+        </ConfirmBtn>
+      </Link>
     </>
   );
 };
