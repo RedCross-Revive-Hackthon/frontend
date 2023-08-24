@@ -54,6 +54,15 @@ const Modal = ({ onClose }: ModalProps) => {
             </Text>
           </DetailOneLine>
         </Main>
+        <Divider />
+        <DetailOneLine>
+          <Text font="body2" color={theme.colors.black}>
+            총점
+          </Text>
+          <Text font="body2" color={theme.colors.deepred}>
+            1,270점
+          </Text>
+        </DetailOneLine>
       </Content>
     </ModalWrapper>
   );
@@ -68,7 +77,6 @@ const ModalWrapper = styled.div`
   align-items: center;
   justify-content: center;
 
-  padding: 0 2.8rem;
   width: 33.5rem;
 `;
 
@@ -77,6 +85,7 @@ const Content = styled.aside`
   border-radius: 1.4rem;
   box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.3);
   background-color: ${theme.colors.white};
+  padding: 0 2.8rem;
   width: 28rem;
   height: 36rem;
 `;
@@ -88,11 +97,25 @@ const StyledClose = styled(Close)`
   cursor: pointer;
 `;
 
-const Title = styled.div``;
+const Title = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-top: 1.9rem;
+`;
 
-const Main = styled.main``;
+const Main = styled.main`
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+  margin-top: 6.6rem;
+`;
 
 const DetailOneLine = styled.div`
   display: flex;
   justify-content: space-between;
+`;
+
+const Divider = styled.div`
+  margin: 1.8rem 0;
+  border-bottom: 0.1rem solid #d9d9d9;
 `;
