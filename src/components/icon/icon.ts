@@ -1,7 +1,7 @@
 import { ReactComponent as BtnAlarm } from '../../assets/svgs/btnAlarm.svg';
 import { ReactComponent as BtnInvite } from '../../assets/svgs/btnInvite.svg';
 import { ReactComponent as BtnSNS } from '../../assets/svgs/btnSNS.svg';
-import { ReactComponent as Checked } from '../../assets/svgs/Checked.svg';
+import { ReactComponent as Checked } from '../../assets/svgs/checked.svg';
 import { ReactComponent as Close } from '../../assets/svgs/close.svg';
 import { ReactComponent as Community } from '../../assets/svgs/community.svg';
 import { ReactComponent as CommunityRed } from '../../assets/svgs/communityRed.svg';
