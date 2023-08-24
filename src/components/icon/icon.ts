@@ -33,7 +33,7 @@ import { ReactComponent as Invite } from '../../assets/svgs/invite.svg';
 import { ReactComponent as MyPage } from '../../assets/svgs/myPage.svg';
 import { ReactComponent as MypageBackground } from '../../assets/svgs/mypageBackground.svg';
 import { ReactComponent as NotChecked } from '../../assets/svgs/notChecked.svg';
-
+import { ReactComponent as PlusBtn } from '../../assets/svgs/plusBtn.svg';
 import { ReactComponent as PostBtn } from '../../assets/svgs/postBtn.svg';
 import { ReactComponent as SecondPlace } from '../../assets/svgs/secondPlace.svg';
 import { ReactComponent as ThirdPlace } from '../../assets/svgs/thirdPlace.svg';
