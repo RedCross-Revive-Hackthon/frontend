@@ -15,7 +15,7 @@ const Barcode = () => {
       </BarcodeTitle>
       <BarcodeCamera />
       <ConfirmBtn>
-        <Text font="point1" color={theme.colors.white}>
+        <Text font="point2" color={theme.colors.white}>
           인식 완료
         </Text>
       </ConfirmBtn>
@@ -33,8 +33,9 @@ const ConfirmBtn = styled.button`
   display: flex;
   justify-content: center;
   margin-top: 5rem;
-  border-radius: 2rem;
-  background: ${theme.colors.black};
+  border-radius: 1.4rem;
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.25);
+  background: var(--deepred, #ff0a00);
   padding: 2rem;
   width: 24rem;
 `;
