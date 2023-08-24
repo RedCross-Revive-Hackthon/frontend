@@ -7,15 +7,16 @@ import { styled } from 'styled-components';
 import { theme } from '../../styles/theme';
 
 interface RankProps {
+  onClick: React.MouseEventHandler<HTMLDivElement>;
   name: string;
   department: string;
   score: number;
   rank: number;
   state: string;
 }
-const Rank = ({ name, department, score, rank, state }: RankProps) => {
+const Rank = ({ onClick, name, department, score, rank, state }: RankProps) => {
   return (
-    <RankWrapper>
+    <RankWrapper onClick={onClick}>
       <LeftSide>
         <Text font="head1" color={theme.colors.deepred}>
           {rank}
@@ -48,6 +49,7 @@ const RankWrapper = styled.div`
   justify-content: space-between;
   border-radius: 1rem;
   box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.16);
+  cursor: pointer;
   padding: 1.4rem;
   padding-left: 2.6rem;
   width: 100%;

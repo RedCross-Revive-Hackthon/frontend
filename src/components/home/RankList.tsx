@@ -1,5 +1,7 @@
+import React, { useState } from 'react';
+
+import Modal from './Modal';
 import Rank from './Rank';
-import React from 'react';
 import { styled } from 'styled-components';
 
 const RANK_LIST = [
@@ -76,10 +78,17 @@ const RANK_LIST = [
 ];
 
 const RankList = () => {
+  const [modalOn, setModalOn] = useState(false);
+
+  const handleModal = () => {
+    setModalOn(!modalOn);
+  };
   return (
     <RankListWrapper>
+      {modalOn && <Modal onClose={handleModal} />}
       {RANK_LIST.map((item, idx) => (
         <Rank
+          onClick={handleModal}
           key={idx + item.name}
           name={item.name}
           department={item.department}
