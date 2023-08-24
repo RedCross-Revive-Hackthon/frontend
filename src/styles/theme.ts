@@ -10,6 +10,7 @@ const colors = {
   orange: '#FF5C00',
   orange02: '#FF8D4D',
   orange03: '#FFD28F',
+  orange04: '#FFBB6A',
 };
 
 export type ColorsTypes = typeof colors;
@@ -40,8 +41,11 @@ const fonts = {
   head4: FONT({ family: 'Pretendard Variable', weight: 700, size: 2.8, letterSpacing: -0.03, lineHeight: 'normal' }),
   head5: FONT({ family: 'Pretendard Variable', weight: 600, size: 2, letterSpacing: -0.03, lineHeight: 'normal' }),
 
+  body2: FONT({ family: 'Pretendard Variable', weight: 500, size: 1.6, letterSpacing: -0.03, lineHeight: 'normal' }),
   body3: FONT({ family: 'Pretendard Variable', weight: 400, size: 1.4, letterSpacing: -0.03, lineHeight: 'normal' }),
   body4: FONT({ family: 'Pretendard Variable', weight: 500, size: 1.8, letterSpacing: -0.03, lineHeight: 'normal' }),
+
+  body7: FONT({ family: 'Pretendard Variable', weight: 700, size: 1.2, letterSpacing: -0.03, lineHeight: 'normal' }),
 
   name1: FONT({ family: 'Pretendard Variable', weight: 400, size: 1.4, letterSpacing: 0, lineHeight: 'normal' }),
   name2: FONT({ family: 'Pretendard Variable', weight: 400, size: 1.2, letterSpacing: 0, lineHeight: 'normal' }),
