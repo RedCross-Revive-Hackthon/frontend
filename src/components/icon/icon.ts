@@ -6,6 +6,7 @@ import { ReactComponent as Community } from '../../assets/svgs/community.svg';
 import { ReactComponent as CommunityRed } from '../../assets/svgs/communityRed.svg';
 import { ReactComponent as DefaultProfileImg } from '../../assets/svgs/defaultProfile.svg';
 import { ReactComponent as DefaultUser } from '../../assets/svgs/defaultUser.svg';
+import { ReactComponent as DetailPost } from '../../assets/svgs/detailPost.svg';
 import { ReactComponent as Down } from '../../assets/svgs/down.svg';
 import { ReactComponent as Event } from '../../assets/svgs/event.svg';
 import { ReactComponent as EventRed } from '../../assets/svgs/eventRed.svg';
@@ -39,6 +40,7 @@ import { ReactComponent as Volunteer } from '../../assets/svgs/volunteer.svg';
 import { ReactComponent as VolunteerRed } from '../../assets/svgs/volunteerRed.svg';
 
 export {
+  DetailPost,
   VolunteerRed,
   HomeRed,
   EventRed,
