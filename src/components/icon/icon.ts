@@ -13,6 +13,11 @@ import { ReactComponent as GivePost2 } from '../../assets/svgs/givePost2.svg';
 import { ReactComponent as GivePost3 } from '../../assets/svgs/givePost3.svg';
 import { ReactComponent as GivePost4 } from '../../assets/svgs/givePost4.svg';
 import { ReactComponent as GivePost5 } from '../../assets/svgs/givePost5.svg';
+import { ReactComponent as HelpPost1 } from '../../assets/svgs/helpPost1.svg';
+import { ReactComponent as HelpPost2 } from '../../assets/svgs/helpPost2.svg';
+import { ReactComponent as HelpPost3 } from '../../assets/svgs/helpPost3.svg';
+import { ReactComponent as HelpPost4 } from '../../assets/svgs/helpPost4.svg';
+import { ReactComponent as HelpPost5 } from '../../assets/svgs/helpPost5.svg';
 import { ReactComponent as Home } from '../../assets/svgs/home.svg';
 import { ReactComponent as IcnPoint } from '../../assets/svgs/icnPoint.svg';
 import { ReactComponent as IcnRank } from '../../assets/svgs/icnRank.svg';
@@ -35,6 +40,11 @@ export {
   GivePost3,
   GivePost4,
   GivePost5,
+  HelpPost1,
+  HelpPost2,
+  HelpPost3,
+  HelpPost4,
+  HelpPost5,
   Close,
   Home,
   DefaultProfileImg,
