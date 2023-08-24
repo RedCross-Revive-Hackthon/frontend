@@ -1,5 +1,3 @@
-import React, { useState } from 'react';
-
 import BarcodeCamera from '../components/barcode/BarcodeCamera';
 import { Link } from 'react-router-dom';
 import Text from '../components/common/Text';

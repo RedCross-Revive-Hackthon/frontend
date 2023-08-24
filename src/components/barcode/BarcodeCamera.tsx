@@ -1,7 +1,6 @@
-import React, { useState } from 'react';
-
 import BarCodeScanner from 'barcode-react-scanner';
 import { styled } from 'styled-components';
+import { useState } from 'react';
 
 const BarcodeCamera = (): JSX.Element => {
   const [code, setCode] = useState<string>('');

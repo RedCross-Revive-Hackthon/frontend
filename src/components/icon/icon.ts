@@ -1,7 +1,7 @@
 import { ReactComponent as BtnAlarm } from '../../assets/svgs/btnAlarm.svg';
 import { ReactComponent as BtnInvite } from '../../assets/svgs/btnInvite.svg';
 import { ReactComponent as BtnSNS } from '../../assets/svgs/btnSNS.svg';
-import { ReactComponent as Checked } from '../../assets/svgs/Checked.svg';
+import { ReactComponent as Checked } from '../../assets/svgs/checked.svg';
 import { ReactComponent as Close } from '../../assets/svgs/close.svg';
 import { ReactComponent as Community } from '../../assets/svgs/community.svg';
 import { ReactComponent as CommunityRed } from '../../assets/svgs/communityRed.svg';
@@ -31,9 +31,8 @@ import { ReactComponent as IconArea } from '../../assets/svgs/iconArea.svg';
 import { ReactComponent as Instagram } from '../../assets/svgs/instagram.svg';
 import { ReactComponent as Invite } from '../../assets/svgs/invite.svg';
 import { ReactComponent as MyPage } from '../../assets/svgs/myPage.svg';
-import { ReactComponent as MypageBackground } from '../../assets/svgs/mypageBackground.svg';
 import { ReactComponent as NotChecked } from '../../assets/svgs/notChecked.svg';
-import { ReactComponent as PlusBtn } from '../../assets/svgs/PlusBtn.svg';
+import { ReactComponent as PlusBtn } from '../../assets/svgs/plusBtn.svg';
 import { ReactComponent as PostBtn } from '../../assets/svgs/postBtn.svg';
 import { ReactComponent as SecondPlace } from '../../assets/svgs/secondPlace.svg';
 import { ReactComponent as ThirdPlace } from '../../assets/svgs/thirdPlace.svg';
@@ -64,7 +63,6 @@ export {
   Close,
   Home,
   DefaultProfileImg,
-  MypageBackground,
   Instagram,
   BtnInvite,
   Invite,

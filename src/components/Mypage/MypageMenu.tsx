@@ -1,4 +1,3 @@
-import React from 'react';
 import Text from '../common/Text';
 import styled from 'styled-components';
 import { theme } from '../../styles/theme';

@@ -1,6 +1,5 @@
 import { DefaultUser, FirstPlace, SecondPlace, ThirdPlace } from '../icon/icon';
 
-import React from 'react';
 import Text from '../common/Text';
 import hideName from '../../utils/hideName';
 import { modalState } from '../../states/modalState';
