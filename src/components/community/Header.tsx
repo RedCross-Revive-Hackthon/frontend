@@ -7,6 +7,7 @@ import { useRecoilState } from 'recoil';
 
 const Header = () => {
   const [currentTap, setCurrentTap] = useRecoilState(communityTapState);
+
   const handleTap = () => {
     setCurrentTap(!currentTap);
   };
@@ -51,7 +52,7 @@ const HeaderWrapper = styled.header`
 const HeaderTap = styled.div<{ $isCurrentTap: boolean }>`
   display: flex;
   justify-content: center;
-  border-bottom: 0.2rem solid ${(props) => (props.isCurrentTap ? theme.colors.deepred : theme.colors.gray01)};
+  border-bottom: 0.2rem solid ${(props) => (props.$isCurrentTap ? theme.colors.deepred : theme.colors.gray01)};
   cursor: pointer;
   width: 100%;
   height: 5.6rem;
