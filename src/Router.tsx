@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 import Barcode from './pages/Barcode';
+import Certification from './pages/Certification';
 import Community from './pages/Community';
 import DetailPostExample from './pages/DetailPostExample';
 import Event from './pages/Event';
@@ -16,7 +17,8 @@ const Router = () => {
         <Route path="/community" element={<Community />}></Route>
         <Route path="/community/give/1" element={<DetailPostExample />}></Route>
         <Route path="/barcode" element={<Barcode />}></Route>
-        <Route path="/mypage" element={<Mypage />}></Route>
+        <Route path="/mypage" element={<Mypage></Mypage>}></Route>
+        <Route path="/certification" element={<Certification></Certification>}></Route>
         <Route path="/event" element={<Event />}></Route>
         <Route path="/volunteer" element={<Volunteer />}></Route>
       </Routes>

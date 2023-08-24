@@ -1,6 +1,5 @@
-
 import { BtnAlarm, DefaultProfileImg, IcnRank, IcnScore } from '../icon/icon';
- 
+
 import Text from '../common/Text';
 import mypageBackgroundImg from '../../assets/svgs/myPageBackgroundImg.png';
 import styled from 'styled-components';
@@ -15,12 +14,12 @@ const MypageHeader = () => {
           <MyInfoSection>
             <NameWrapper>
               <Text font="head4" color={theme.colors.white}>
-                적십자
+                이재훈
               </Text>
             </NameWrapper>
             <MajorWrapper>
               <Text font={'univ1'} color={theme.colors.white}>
-                적십자 대학교
+                가톨릭대학교
               </Text>
             </MajorWrapper>
             {/* head4로 추후에 변경해야함 */}

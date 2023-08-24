@@ -11,8 +11,10 @@
   },
   "dependencies": {
     "barcode-react-scanner": "^1.2.0",
+    "html2canvas": "^1.4.1",
     "prettier": "^3.0.2",
     "react": "^18.2.0",
+    "react-device-detect": "^2.2.3",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.15.0",
     "recoil": "^0.7.7",
