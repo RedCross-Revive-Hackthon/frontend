@@ -109,5 +109,6 @@ const RankListWrapper = styled.div`
   flex-direction: column;
   gap: 1.4rem;
   margin-top: 2rem;
+  margin-bottom: 15rem;
   width: 100%;
 `;
