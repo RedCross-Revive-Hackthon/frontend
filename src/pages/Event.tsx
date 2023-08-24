@@ -6,6 +6,7 @@ import attendanceBg from '../assets/images/checkBackground.png';
 import attendanceMessage from '../assets/images/checkWording.png';
 import attendanceTitle from '../assets/images/checkTitle.png';
 import { styled } from 'styled-components';
+import { theme } from '../styles/theme';
 import { useState } from 'react';
 
 const Event = () => {
@@ -62,7 +63,7 @@ const AttendaceMain = styled.main`
   margin: 2rem;
   border-radius: 1.4rem;
   box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.15);
-  background-color: '#ffffff';
+  background-color: ${theme.colors.white};
   width: 33.5rem;
   height: 43.6rem;
 `;
