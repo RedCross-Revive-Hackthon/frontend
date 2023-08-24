@@ -14,6 +14,11 @@ const Barcode = () => {
         </Text>
       </BarcodeTitle>
       <BarcodeCamera />
+      <ConfirmBtn>
+        <Text font="point1" color={theme.colors.white}>
+          인식 완료
+        </Text>
+      </ConfirmBtn>
     </>
   );
 };
@@ -22,4 +27,14 @@ export default Barcode;
 
 const BarcodeTitle = styled.div`
   margin-top: 10rem;
+`;
+
+const ConfirmBtn = styled.button`
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+  border-radius: 2rem;
+  background: ${theme.colors.black};
+  padding: 2rem;
+  width: 24rem;
 `;
