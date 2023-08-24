@@ -5,3 +5,5 @@ const MainComponents = () => {
 };
 
 export default MainComponents;
+
+const MainComponentsWrapper = {};
