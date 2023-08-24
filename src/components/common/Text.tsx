@@ -40,6 +40,8 @@ const TextWrapper = styled.span<{ $font: string; $color: string }>`
         return theme.fonts.point1;
       case 'point2':
         return theme.fonts.point2;
+      case 'point3':
+        return theme.fonts.point3;
       default:
         return '';
     }

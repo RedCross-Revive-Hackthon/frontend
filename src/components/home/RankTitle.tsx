@@ -1,3 +1,4 @@
+import { MyPage } from '../icon/icon';
 import React from 'react';
 import Text from '../common/Text';
 import { styled } from 'styled-components';
@@ -25,6 +26,7 @@ const RankTitle = () => {
           </Text>
         </MainTextWrapper>
       </TextWrapper>
+      <MyPage />
     </RankTitleWrapper>
   );
 };
@@ -33,7 +35,11 @@ export default RankTitle;
 
 const RankTitleWrapper = styled.header`
   display: flex;
+  align-items: end;
+  justify-content: space-between;
+  margin-top: 3.4rem;
   width: 100%;
+  height: 4.9rem;
 `;
 
 const TextWrapper = styled.div`

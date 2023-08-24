@@ -40,6 +40,7 @@ const fonts = {
   univ2: FONT({ family: 'Pretendard Variable', weight: 400, size: 1, letterSpacing: -0.03 }),
   point1: FONT({ family: 'Pretendard Variable', weight: 700, size: 1.8, letterSpacing: 0 }),
   point2: FONT({ family: 'Pretendard Variable', weight: 500, size: 1.6, letterSpacing: 0 }),
+  point3: FONT({ family: 'Pretendard Variable', weight: 600, size: 1.4, letterSpacing: 0 }),
 };
 
 export type FontsTypes = typeof fonts;

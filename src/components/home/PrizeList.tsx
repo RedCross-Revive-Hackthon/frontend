@@ -22,7 +22,7 @@ const PRIZE_LIST = [
   {
     name: '윤서영',
     department: '컴퓨터정보공학과',
-    score: 10000,
+    score: 5000,
     rank: 3,
   },
 ];
@@ -83,6 +83,7 @@ export default PrizeList;
 
 const PrizeListWrapper = styled.main`
   display: flex;
+  gap: 0.4rem;
   align-items: end;
   margin-top: 2.4rem;
 `;
