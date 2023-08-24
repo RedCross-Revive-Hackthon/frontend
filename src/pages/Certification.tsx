@@ -3,9 +3,11 @@ import { isAndroid, isIOS } from 'react-device-detect';
 import CerificationImg from '../assets/svgs/blood_certification.png';
 import React from 'react';
 import Text from '../components/common/Text';
+import html2canvas from 'html2canvas';
 import styled from 'styled-components';
 import { theme } from '../styles/theme';
 import { useNavigate } from 'react-router';
+import { useRef } from 'react';
 
 const Certification = () => {
   const navigate = useNavigate();
@@ -27,11 +29,24 @@ const Certification = () => {
     }
     window.location.replace('https://www.instagram.com/');
   };
+
+  const imageRef = useRef(null);
+
+  const downloadImage = () => {
+    if (imageRef.current) {
+      html2canvas(imageRef.current).then((canvas) => {
+        const link = document.createElement('a');
+        link.download = 'myimage.png';
+        link.href = canvas.toDataURL('image/png');
+        link.click();
+      });
+    }
+  };
   return (
     <CertificationWrapper>
-      <CertificationImage src={CerificationImg}></CertificationImage>
+      <CertificationImage src={CerificationImg} ref={imageRef}></CertificationImage>
       <PositiveBtnWrapper>
-        <PositiveBtn>
+        <PositiveBtn onClick={downloadImage}>
           <Text font="point2" color={theme.colors.white}>
             이미지 저장
           </Text>
