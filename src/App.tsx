@@ -20,8 +20,6 @@ const MobileWrapper = styled.div`
   max-width: var(--app-max-width, 37.5rem);
   min-height: calc(var(--vh, 1vh) * 100);
 `;
-import { ThemeProvider } from 'styled-components';
-import { theme } from './styles/theme';
 
 function App() {
   const setScreenSize = () => {

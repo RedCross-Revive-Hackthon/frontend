@@ -31,11 +31,12 @@ const Head1 = styled.span`
 const Head2 = styled.span`
   width: 10rem;
   ${({ theme }) => theme.fonts.head2}
-  background-color:${({ theme }) => theme.colors.redorange_gra_00};
+  background:${({ theme }) => theme.colors.redorange_gra_00};
 `;
 
 const Head3 = styled.span`
   ${({ theme }) => theme.fonts.head3}
+  color:${({ theme }) => theme.colors.gray01}
 `;
 
 const Name1 = styled.span`
