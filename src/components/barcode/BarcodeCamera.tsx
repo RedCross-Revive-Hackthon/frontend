@@ -1,7 +1,7 @@
 import BarCodeScanner from 'barcode-react-scanner';
+import formatBarcode from '../../utils/formatBarcode';
 import { styled } from 'styled-components';
 import { useState } from 'react';
-
 const BarcodeCamera = (): JSX.Element => {
   const [code, setCode] = useState<string>('');
 
@@ -10,7 +10,7 @@ const BarcodeCamera = (): JSX.Element => {
       <BarCodeScanner
         onUpdate={(err, resp): void => {
           if (resp) {
-            setCode(resp.getText());
+            setCode(formatBarcode(resp.getText()));
           }
           if (err) console.log(err);
         }}
