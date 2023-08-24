@@ -1,5 +1,3 @@
-import React from 'react';
-
 const MainComponents = () => {
   return <div>MainComponents</div>;
 };
