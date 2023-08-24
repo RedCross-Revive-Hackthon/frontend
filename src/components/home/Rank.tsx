@@ -15,7 +15,7 @@ interface RankProps {
   rank: number;
   state: string;
 }
-const Rank = ({ onClick, name, department, score, rank }: RankProps) => {
+const Rank = ({ onClick, name, department, score, rank, state }: RankProps) => {
   return (
     <RankWrapper onClick={onClick}>
       <LeftSide>

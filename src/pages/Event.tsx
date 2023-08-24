@@ -62,7 +62,7 @@ const AttendaceMain = styled.main`
   margin: 2rem;
   border-radius: 1.4rem;
   box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.15);
-  background-color: white;
+  background-color: '#ffffff';
   width: 33.5rem;
   height: 43.6rem;
 `;
