@@ -45,6 +45,34 @@ const RANK_LIST = [
     score: 4500,
     state: 'up',
   },
+  {
+    rank: 9,
+    name: '홍길동',
+    department: '디자인조형학부',
+    score: 4500,
+    state: 'up',
+  },
+  {
+    rank: 9,
+    name: '홍길동',
+    department: '디자인조형학부',
+    score: 4500,
+    state: 'up',
+  },
+  {
+    rank: 9,
+    name: '홍길동',
+    department: '디자인조형학부',
+    score: 4500,
+    state: 'up',
+  },
+  {
+    rank: 9,
+    name: '홍길동',
+    department: '디자인조형학부',
+    score: 4500,
+    state: 'up',
+  },
 ];
 
 const RankList = () => {
