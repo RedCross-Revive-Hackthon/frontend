@@ -1,4 +1,4 @@
-import { DefaultTheme } from 'styled-components';
+import { DefaultTheme } from 'styled-components/dist/types';
 
 const colors = {
   redorange_gra_00: 'linear-gradient(180deg, #FE0000 0%, #FF7000 100%))',
@@ -36,8 +36,8 @@ const fonts = {
   head3: FONT({ family: 'Pretendard Variable', weight: 600, size: 2, letterSpacing: -0.03 }),
   name1: FONT({ family: 'Pretendard Variable', weight: 400, size: 1.4, letterSpacing: 0 }),
   name2: FONT({ family: 'Pretendard Variable', weight: 400, size: 1.2, letterSpacing: 0 }),
-  univ1: FONT({ family: 'Pretendard Variable', weight: 400, size: 1.2, letterSpacing: -0.3 }),
-  univ2: FONT({ family: 'Pretendard Variable', weight: 400, size: 1, letterSpacing: -0.3 }),
+  univ1: FONT({ family: 'Pretendard Variable', weight: 400, size: 1.2, letterSpacing: -0.03 }),
+  univ2: FONT({ family: 'Pretendard Variable', weight: 400, size: 1, letterSpacing: -0.03 }),
   point1: FONT({ family: 'Pretendard Variable', weight: 700, size: 1.8, letterSpacing: 0 }),
   point2: FONT({ family: 'Pretendard Variable', weight: 500, size: 1.6, letterSpacing: 0 }),
 };
