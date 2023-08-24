@@ -25,7 +25,7 @@ const Footer = () => {
         </IconSection>
       </IconContainer>
       <IconArea />
-      {location === '/community' ? (
+      {location === '/community' || location === '/community/give/1' ? (
         <Link to="#">
           <StyledPostBtn />
         </Link>
