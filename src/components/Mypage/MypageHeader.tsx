@@ -1,6 +1,5 @@
-import { DefaultProfileImg, MypageBackground } from '../icon/icon';
-
-import Text from '../Text';
+import { DefaultProfileImg } from '../icon/icon';
+import Text from '../common/Text';
 import mypageBackgroundImg from '../../assets/svgs/myPageBackgroundImg.png';
 import styled from 'styled-components';
 import { theme } from '../../styles/theme';
