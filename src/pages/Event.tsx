@@ -2,9 +2,9 @@ import { Checked, NotChecked } from '../components/icon/icon';
 
 import EventImg from '../assets/images/eventImg.png';
 import Footer from '../components/common/Footer';
-import attendanceBg from '../assets/images/출석체크배경.png';
-import attendanceMessage from '../assets/images/출석체크문구.png';
-import attendanceTitle from '../assets/images/출석체크타이틀.png';
+import attendanceBg from '../assets/images/checkBackground.png';
+import attendanceMessage from '../assets/images/checkWording.png';
+import attendanceTitle from '../assets/images/checkTitle.png';
 import { styled } from 'styled-components';
 import { useState } from 'react';
 
