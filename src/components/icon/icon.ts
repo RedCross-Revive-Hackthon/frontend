@@ -31,6 +31,7 @@ import { ReactComponent as Invite } from '../../assets/svgs/invite.svg';
 import { ReactComponent as MyPage } from '../../assets/svgs/myPage.svg';
 import { ReactComponent as MypageBackground } from '../../assets/svgs/mypageBackground.svg';
 import { ReactComponent as PlusBtn } from '../../assets/svgs/PlusBtn.svg';
+import { ReactComponent as PostBtn } from '../../assets/svgs/postBtn.svg';
 import { ReactComponent as SecondPlace } from '../../assets/svgs/secondPlace.svg';
 import { ReactComponent as ThirdPlace } from '../../assets/svgs/thirdPlace.svg';
 import { ReactComponent as Trophy } from '../../assets/svgs/trophy.svg';
@@ -39,6 +40,7 @@ import { ReactComponent as Volunteer } from '../../assets/svgs/volunteer.svg';
 import { ReactComponent as VolunteerRed } from '../../assets/svgs/volunteerRed.svg';
 
 export {
+  PostBtn,
   VolunteerRed,
   HomeRed,
   EventRed,
