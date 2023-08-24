@@ -1,9 +1,9 @@
 import { Link } from 'react-router-dom';
 import { MyPage } from '../icon/icon';
-import React from 'react';
 import Text from '../common/Text';
 import { styled } from 'styled-components';
 import { theme } from '../../styles/theme';
+
 const dummy = {
   university: '적십자대학교',
   name: '홍길동',
