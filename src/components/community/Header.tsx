@@ -1,11 +1,12 @@
-import React, { useState } from 'react';
-
+import React from 'react';
 import Text from '../common/Text';
+import { communityTapState } from '../../states/communityTapState';
 import { styled } from 'styled-components';
 import { theme } from '../../styles/theme';
+import { useRecoilState } from 'recoil';
 
 const Header = () => {
-  const [currentTap, setCurrentTap] = useState(false);
+  const [currentTap, setCurrentTap] = useRecoilState(communityTapState);
   const handleTap = () => {
     setCurrentTap(!currentTap);
   };

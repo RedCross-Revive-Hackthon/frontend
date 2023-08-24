@@ -8,6 +8,11 @@ import { ReactComponent as DefaultUser } from '../../assets/svgs/defaultUser.svg
 import { ReactComponent as Down } from '../../assets/svgs/down.svg';
 import { ReactComponent as Event } from '../../assets/svgs/event.svg';
 import { ReactComponent as FirstPlace } from '../../assets/svgs/firstPlace.svg';
+import { ReactComponent as GivePost1 } from '../../assets/svgs/givePost1.svg';
+import { ReactComponent as GivePost2 } from '../../assets/svgs/givePost2.svg';
+import { ReactComponent as GivePost3 } from '../../assets/svgs/givePost3.svg';
+import { ReactComponent as GivePost4 } from '../../assets/svgs/givePost4.svg';
+import { ReactComponent as GivePost5 } from '../../assets/svgs/givePost5.svg';
 import { ReactComponent as Home } from '../../assets/svgs/home.svg';
 import { ReactComponent as IcnPoint } from '../../assets/svgs/icnPoint.svg';
 import { ReactComponent as IcnRank } from '../../assets/svgs/icnRank.svg';
@@ -25,6 +30,11 @@ import { ReactComponent as Up } from '../../assets/svgs/up.svg';
 import { ReactComponent as Volunteer } from '../../assets/svgs/volunteer.svg';
 
 export {
+  GivePost1,
+  GivePost2,
+  GivePost3,
+  GivePost4,
+  GivePost5,
   Close,
   Home,
   DefaultProfileImg,
