@@ -1,14 +1,9 @@
-const replaceMiddleChar = (input: string): string => {
-  if (input.length % 2 === 0) {
-    const middleIndex = input.length / 2 - 1;
-    const firstPart = input.substring(0, middleIndex + 1);
-    const secondPart = input.substring(middleIndex + 1);
-    return firstPart + 'O' + secondPart;
-  } else {
-    return input;
-  }
+const hideName = (input?: string): string => {
+  if (!input) return '';
+  const firstPart = input.substring(0, 1);
+  const secondPart = input.substring(2);
+  console.log(secondPart);
+  return firstPart + 'O' + secondPart;
 };
 
-const originalString = '홍길동';
-const modifiedString = replaceMiddleChar(originalString);
-console.log(modifiedString);
+export default hideName;

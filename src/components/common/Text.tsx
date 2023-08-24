@@ -1,7 +1,7 @@
+import { ReactNode } from 'react';
 import { styled } from 'styled-components';
-
 interface ValueProps {
-  children: string | string[];
+  children: ReactNode;
   font: string;
   color?: string;
 }
