@@ -1,6 +1,7 @@
 import { Checked, NotChecked } from '../components/icon/icon';
 import React, { useState } from 'react';
 
+import EventImg from '../assets/images/eventImg.png';
 import Footer from '../components/common/Footer';
 import attendanceBg from '../assets/images/출석체크배경.png';
 import attendanceMessage from '../assets/images/출석체크문구.png';
@@ -28,6 +29,7 @@ const Event = () => {
           </CheckList>
         </AttendaceMain>
       </AttendanceWrapper>
+      <ImgContainer src={EventImg} />
       <Footer />
     </>
   );
@@ -74,4 +76,10 @@ const CheckList = styled.div`
 
 const CheckContainer = styled.div`
   cursor: pointer;
+`;
+
+const ImgContainer = styled.img`
+  position: absolute;
+  top: 62.9rem;
+  width: 100%;
 `;
