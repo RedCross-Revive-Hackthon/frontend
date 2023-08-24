@@ -1,7 +1,7 @@
 import Footer from '../components/common/Footer';
 import React from 'react';
 
-const Event = () => {
+const Volunteer = () => {
   return (
     <>
       <Footer />
@@ -9,4 +9,4 @@ const Event = () => {
   );
 };
 
-export default Event;
+export default Volunteer;

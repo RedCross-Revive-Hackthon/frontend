@@ -5,6 +5,7 @@ import Community from './pages/Community';
 import Event from './pages/Event';
 import Home from './pages/Home';
 import Mypage from './pages/Mypage';
+import Volunteer from './pages/Volunteer';
 
 const Router = () => {
   return (
@@ -15,6 +16,7 @@ const Router = () => {
         <Route path="/barcode" element={<Barcode />}></Route>
         <Route path="/mypage" element={<Mypage />}></Route>
         <Route path="/event" element={<Event />}></Route>
+        <Route path="/volunteer" element={<Volunteer />}></Route>
       </Routes>
     </BrowserRouter>
   );

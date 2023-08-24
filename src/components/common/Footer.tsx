@@ -1,22 +1,26 @@
-import { Community, Event, Home, Volunteer } from '../icon/icon';
+import { Community, CommunityRed, Event, EventRed, Home, HomeRed, Volunteer, VolunteerRed } from '../icon/icon';
 
 import { IconArea } from '../icon/icon';
 import { Link } from 'react-router-dom';
 import { PlusBtn } from '../icon/icon';
 import React from 'react';
 import { styled } from 'styled-components';
+import { theme } from '../../styles/theme';
+import { useLocation } from 'react-router-dom';
 
 const Footer = () => {
+  const location = useLocation().pathname;
+
   return (
     <FooterWrapper>
       <IconContainer>
         <IconSection>
-          <Home />
-          <Community />
+          <Link to="/">{location === '/' ? <HomeRed /> : <Home />}</Link>
+          <Link to="/community">{location === '/community' ? <CommunityRed /> : <Community />}</Link>
         </IconSection>
         <IconSection>
-          <Event />
-          <Volunteer />
+          <Link to="/event">{location === '/event' ? <EventRed /> : <Event />}</Link>
+          <Link to="/volunteer">{location === '/volunteer' ? <VolunteerRed /> : <Volunteer />}</Link>
         </IconSection>
       </IconContainer>
       <IconArea />

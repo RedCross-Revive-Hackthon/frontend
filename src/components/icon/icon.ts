@@ -3,10 +3,12 @@ import { ReactComponent as BtnInvite } from '../../assets/svgs/btnInvite.svg';
 import { ReactComponent as BtnSNS } from '../../assets/svgs/btnSNS.svg';
 import { ReactComponent as Close } from '../../assets/svgs/close.svg';
 import { ReactComponent as Community } from '../../assets/svgs/community.svg';
+import { ReactComponent as CommunityRed } from '../../assets/svgs/communityRed.svg';
 import { ReactComponent as DefaultProfileImg } from '../../assets/svgs/defaultProfile.svg';
 import { ReactComponent as DefaultUser } from '../../assets/svgs/defaultUser.svg';
 import { ReactComponent as Down } from '../../assets/svgs/down.svg';
 import { ReactComponent as Event } from '../../assets/svgs/event.svg';
+import { ReactComponent as EventRed } from '../../assets/svgs/eventRed.svg';
 import { ReactComponent as FirstPlace } from '../../assets/svgs/firstPlace.svg';
 import { ReactComponent as GivePost1 } from '../../assets/svgs/givePost1.svg';
 import { ReactComponent as GivePost2 } from '../../assets/svgs/givePost2.svg';
@@ -19,6 +21,7 @@ import { ReactComponent as HelpPost3 } from '../../assets/svgs/helpPost3.svg';
 import { ReactComponent as HelpPost4 } from '../../assets/svgs/helpPost4.svg';
 import { ReactComponent as HelpPost5 } from '../../assets/svgs/helpPost5.svg';
 import { ReactComponent as Home } from '../../assets/svgs/home.svg';
+import { ReactComponent as HomeRed } from '../../assets/svgs/homeRed.svg';
 import { ReactComponent as IcnPoint } from '../../assets/svgs/icnPoint.svg';
 import { ReactComponent as IcnRank } from '../../assets/svgs/icnRank.svg';
 import { ReactComponent as IcnScore } from '../../assets/svgs/icnScore.svg';
@@ -33,8 +36,13 @@ import { ReactComponent as ThirdPlace } from '../../assets/svgs/thirdPlace.svg';
 import { ReactComponent as Trophy } from '../../assets/svgs/trophy.svg';
 import { ReactComponent as Up } from '../../assets/svgs/up.svg';
 import { ReactComponent as Volunteer } from '../../assets/svgs/volunteer.svg';
+import { ReactComponent as VolunteerRed } from '../../assets/svgs/volunteerRed.svg';
 
 export {
+  VolunteerRed,
+  HomeRed,
+  EventRed,
+  CommunityRed,
   GivePost1,
   GivePost2,
   GivePost3,
