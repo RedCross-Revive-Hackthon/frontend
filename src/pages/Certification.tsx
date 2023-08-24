@@ -36,7 +36,7 @@ const Certification = () => {
     if (imageRef.current) {
       html2canvas(imageRef.current).then((canvas) => {
         const link = document.createElement('a');
-        link.download = 'myimage.png';
+        link.download = 'myBloodCertification.png';
         link.href = canvas.toDataURL('image/png');
         link.click();
       });
@@ -45,6 +45,9 @@ const Certification = () => {
   return (
     <CertificationWrapper>
       <CertificationImage src={CerificationImg} ref={imageRef}></CertificationImage>
+      <Text font="name2" color={theme.colors.gray02}>
+        이미지 저장 후 인스타그램 공유 버튼을 눌러주세요
+      </Text>
       <PositiveBtnWrapper>
         <PositiveBtn onClick={downloadImage}>
           <Text font="point2" color={theme.colors.white}>
@@ -53,7 +56,7 @@ const Certification = () => {
         </PositiveBtn>
         <PositiveBtn onClick={handleDeepLink}>
           <Text font="point2" color={theme.colors.white}>
-            인스타그램에 공유
+            인스타그램 공유
           </Text>
         </PositiveBtn>
       </PositiveBtnWrapper>
