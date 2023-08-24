@@ -11,9 +11,9 @@ const MobileWrapper = styled.div`
   position: relative;
   flex-direction: column;
   align-items: center;
-
   margin: 0 auto;
-  background-color: ${({ theme }) => theme.colors.grey10};
+
+  background-color: ${({ theme }) => theme.colors.white};
 
   padding-right: 2rem;
   padding-left: 2rem;
@@ -44,9 +44,11 @@ function App() {
       <ThemeProvider theme={theme}>
         <ThemeProvider theme={theme}>
           <GlobalStyle />
-          <MobileWrapper>
-            <Router />
-          </MobileWrapper>
+          <TempBackground>
+            <MobileWrapper>
+              <Router />
+            </MobileWrapper>
+          </TempBackground>
         </ThemeProvider>
       </ThemeProvider>
     </>
@@ -54,3 +56,7 @@ function App() {
 }
 
 export default App;
+
+const TempBackground = styled.div`
+  background-color: ${({ theme }) => theme.colors.gray02};
+`;
