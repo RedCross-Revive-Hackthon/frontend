@@ -1,11 +1,14 @@
-import React from 'react';
-import ThemeTest from '../components/ThemeTest';
+import { Icon } from '../components/icon';
+import { styled } from 'styled-components';
+
 const Main = () => {
   return (
-    <div>
-      <ThemeTest></ThemeTest>
-    </div>
+    <>
+      <IconTest />
+    </>
   );
 };
 
 export default Main;
+
+const IconTest = styled(Icon.HomeIc)``;
