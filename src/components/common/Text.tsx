@@ -1,7 +1,6 @@
-
+import { ReactNode } from 'react';
 import { styled } from 'styled-components';
 import { theme } from '../../styles/theme';
-import { ReactNode } from 'react';
 interface ValueProps {
   children: ReactNode;
   font: string;
@@ -42,10 +41,10 @@ const TextWrapper = styled.span<{ $font: string; $color: string }>`
         return theme.fonts.body3;
       case 'body4':
         return theme.fonts.body4;
-
+      case 'body4':
+        return theme.fonts.body5;
       case 'body7':
         return theme.fonts.body7;
-
 
       case 'name1':
         return theme.fonts.name1;
