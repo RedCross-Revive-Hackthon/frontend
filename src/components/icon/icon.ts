@@ -1,6 +1,7 @@
 import { ReactComponent as BtnAlarm } from '../../assets/svgs/btnAlarm.svg';
 import { ReactComponent as BtnInvite } from '../../assets/svgs/btnInvite.svg';
 import { ReactComponent as BtnSNS } from '../../assets/svgs/btnSNS.svg';
+import { ReactComponent as Close } from '../../assets/svgs/close.svg';
 import { ReactComponent as Community } from '../../assets/svgs/community.svg';
 import { ReactComponent as DefaultProfileImg } from '../../assets/svgs/defaultProfile.svg';
 import { ReactComponent as DefaultUser } from '../../assets/svgs/defaultUser.svg';
@@ -24,6 +25,8 @@ import { ReactComponent as Up } from '../../assets/svgs/up.svg';
 import { ReactComponent as Volunteer } from '../../assets/svgs/volunteer.svg';
 
 export {
+  Close,
+  Home,
   DefaultProfileImg,
   MypageBackground,
   Instagram,
@@ -35,7 +38,6 @@ export {
   BtnAlarm,
   IcnRank,
   IcnScore,
-  Home,
   FirstPlace,
   SecondPlace,
   ThirdPlace,

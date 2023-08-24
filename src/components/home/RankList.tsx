@@ -1,6 +1,10 @@
+import React, { useState } from 'react';
+
+import Modal from './Modal';
 import Rank from './Rank';
-import React from 'react';
+import { modalState } from '../../states/modalState';
 import { styled } from 'styled-components';
+import { useRecoilState } from 'recoil';
 
 const RANK_LIST = [
   {
@@ -74,12 +78,18 @@ const RANK_LIST = [
     state: 'up',
   },
 ];
-
 const RankList = () => {
+  const [modalOn, setModalOn] = useRecoilState(modalState);
+
+  const handleModal = () => {
+    setModalOn(!modalOn);
+  };
   return (
     <RankListWrapper>
+      {modalOn && <Modal onClose={handleModal} />}
       {RANK_LIST.map((item, idx) => (
         <Rank
+          onClick={handleModal}
           key={idx + item.name}
           name={item.name}
           department={item.department}
