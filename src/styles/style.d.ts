@@ -1,6 +1,9 @@
-export type FontsTypes = typeof fonts;
+import 'styled-components';
+import { ColorsTypes, FontsTypes } from './theme';
 
-export const theme: DefaultTheme = {
-  colors,
-  fonts,
-};
+declare module 'styled-components' {
+  export interface DefaultTheme {
+    colors: ColorsTypes;
+    fonts: FontsTypes;
+  }
+}
