@@ -5,7 +5,6 @@ import Text from '../components/common/Text';
 import html2canvas from 'html2canvas';
 import styled from 'styled-components';
 import { theme } from '../styles/theme';
-import { useNavigate } from 'react-router';
 import { useRef } from 'react';
 
 const Final = () => {
