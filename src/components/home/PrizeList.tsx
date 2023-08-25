@@ -52,14 +52,14 @@ const PrizeList = () => {
       rank: 1,
       name: '서채원',
       department: '디자인조형학부',
-      score: 15800,
+      score: 28000,
       state: 'up',
     });
   };
 
   const setThirdPlaceContent = () => {
     setModalContent({
-      rank: 1,
+      rank: 3,
       name: '윤서영',
       department: '컴퓨터정보공학과',
       score: 11200,
