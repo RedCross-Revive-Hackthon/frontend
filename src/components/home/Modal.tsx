@@ -1,15 +1,17 @@
-//Modal.js
-
 import { Close } from '../icon/icon';
 import Text from '../common/Text';
+import { modalContentState } from '../../states/modalContentState';
+import { splitNumberToEqualSum } from '../../utils/numberQuarter';
 import styled from 'styled-components';
 import { theme } from '../../styles/theme';
-
+import { useRecoilValue } from 'recoil';
 interface ModalProps {
   onClose: () => void;
 }
 
 const Modal = ({ onClose }: ModalProps) => {
+  const modalContent = useRecoilValue(modalContentState);
+  const splitedNumbers = splitNumberToEqualSum(modalContent.score);
   return (
     <ModalWrapper>
       <Content>
@@ -25,7 +27,7 @@ const Modal = ({ onClose }: ModalProps) => {
               헌혈
             </Text>
             <Text font="body5" color={theme.colors.black}>
-              600점
+              {splitedNumbers[0].toLocaleString()}점
             </Text>
           </DetailOneLine>
           <DetailOneLine>
@@ -33,7 +35,7 @@ const Modal = ({ onClose }: ModalProps) => {
               헌혈 증서 나눔
             </Text>
             <Text font="body5" color={theme.colors.black}>
-              150점
+              {splitedNumbers[1].toLocaleString()}점
             </Text>
           </DetailOneLine>
           <DetailOneLine>
@@ -41,7 +43,7 @@ const Modal = ({ onClose }: ModalProps) => {
               지정 헌혈
             </Text>
             <Text font="body5" color={theme.colors.black}>
-              500점
+              {splitedNumbers[2].toLocaleString()}점
             </Text>
           </DetailOneLine>
           <DetailOneLine>
@@ -49,7 +51,7 @@ const Modal = ({ onClose }: ModalProps) => {
               커뮤니티
             </Text>
             <Text font="body5" color={theme.colors.black}>
-              20점
+              {splitedNumbers[3].toLocaleString()}점
             </Text>
           </DetailOneLine>
         </Main>
@@ -59,7 +61,7 @@ const Modal = ({ onClose }: ModalProps) => {
             총점
           </Text>
           <Text font="body2" color={theme.colors.deepred}>
-            1,270점
+            {modalContent.score.toLocaleString()}점
           </Text>
         </DetailOneLine>
       </Content>

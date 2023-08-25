@@ -45,11 +45,9 @@ function App() {
       <ThemeProvider theme={theme}>
         <ThemeProvider theme={theme}>
           <GlobalStyle />
-          <TempBackground>
-            <MobileWrapper>
-              <Router />
-            </MobileWrapper>
-          </TempBackground>
+          <MobileWrapper>
+            <Router />
+          </MobileWrapper>
         </ThemeProvider>
       </ThemeProvider>
     </RecoilRoot>
@@ -57,7 +55,3 @@ function App() {
 }
 
 export default App;
-
-const TempBackground = styled.div`
-  background-color: ${({ theme }) => theme.colors.gray02};
-`;

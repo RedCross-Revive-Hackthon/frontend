@@ -1,23 +1,38 @@
 import { Down, Up } from '../icon/icon';
+import { useRecoilState, useSetRecoilState } from 'recoil';
 
 import { DefaultUser } from '../icon/icon';
-import React from 'react';
 import Text from '../common/Text';
 import hideName from '../../utils/hideName';
+import { modalContentState } from '../../states/modalContentState';
+import { modalState } from '../../states/modalState';
 import { styled } from 'styled-components';
 import { theme } from '../../styles/theme';
 
-interface RankProps {
-  onClick: React.MouseEventHandler<HTMLDivElement>;
+export interface RankProps {
   name: string;
   department: string;
   score: number;
   rank: number;
-  state: string;
+  state: 'up' | 'down';
 }
-const Rank = ({ onClick, name, department, score, rank, state }: RankProps) => {
+const Rank = ({ name, department, score, rank, state }: RankProps) => {
+  const [modalOn, setModalOn] = useRecoilState(modalState);
+  const setModalContent = useSetRecoilState(modalContentState);
+
+  const handleModal = () => {
+    setModalOn(!modalOn);
+    setModalContent({
+      rank: rank,
+      name: name,
+      department: department,
+      score: score,
+      state: state,
+    });
+  };
+
   return (
-    <RankWrapper onClick={onClick}>
+    <RankWrapper onClick={handleModal}>
       <LeftSide>
         <Text font="head1" color={theme.colors.deepred}>
           {rank}
