@@ -2,41 +2,78 @@ import { DefaultUser, FirstPlace, SecondPlace, ThirdPlace } from '../icon/icon';
 
 import Text from '../common/Text';
 import hideName from '../../utils/hideName';
+import { modalContentState } from '../../states/modalContentState';
 import { modalState } from '../../states/modalState';
 import { styled } from 'styled-components';
 import { theme } from '../../styles/theme';
 import { useRecoilState } from 'recoil';
+import { useSetRecoilState } from 'recoil';
 
 const PRIZE_LIST = [
   {
     name: '심은서',
     department: '아트&테크놀로지학과',
-    score: 8000,
+    score: 15800,
     rank: 2,
   },
   {
     name: '서지원',
     department: '디자인조형학부',
-    score: 10000,
+    score: 28000,
     rank: 1,
   },
   {
     name: '윤서영',
     department: '컴퓨터정보공학과',
-    score: 5000,
+    score: 11200,
     rank: 3,
   },
 ];
 
 const PrizeList = () => {
   const [modalOn, setModalOn] = useRecoilState(modalState);
-
+  const setModalContent = useSetRecoilState(modalContentState);
   const handleModal = () => {
     setModalOn(!modalOn);
   };
+
+  const setSecondPlaceContent = () => {
+    setModalContent({
+      rank: 2,
+      name: '심은서',
+      department: '아트&테크놀로지학과',
+      score: 15800,
+      state: 'up',
+    });
+  };
+
+  const setFirstPlaceContent = () => {
+    setModalContent({
+      rank: 1,
+      name: '서채원',
+      department: '디자인조형학부',
+      score: 15800,
+      state: 'up',
+    });
+  };
+
+  const setThirdPlaceContent = () => {
+    setModalContent({
+      rank: 1,
+      name: '윤서영',
+      department: '컴퓨터정보공학과',
+      score: 11200,
+      state: 'up',
+    });
+  };
+
   return (
     <PrizeListWrapper>
-      <SecondPlaceWrapper onClick={handleModal}>
+      <SecondPlaceWrapper
+        onClick={() => {
+          handleModal();
+          setSecondPlaceContent();
+        }}>
         <SecondPlace />
         <UserScoreInfo>
           <SmallDefaultUser />
@@ -51,7 +88,11 @@ const PrizeList = () => {
           </Text>
         </UserScoreInfo>
       </SecondPlaceWrapper>
-      <FirstPlaceWrapper onClick={handleModal}>
+      <FirstPlaceWrapper
+        onClick={() => {
+          handleModal();
+          setFirstPlaceContent();
+        }}>
         <FirstPlace />
         <UserScoreInfo>
           <DefaultUser />
@@ -66,7 +107,11 @@ const PrizeList = () => {
           </Text>
         </UserScoreInfo>
       </FirstPlaceWrapper>
-      <ThirdPlaceWrapper onClick={handleModal}>
+      <ThirdPlaceWrapper
+        onClick={() => {
+          handleModal();
+          setThirdPlaceContent();
+        }}>
         <ThirdPlace />
         <UserScoreInfo>
           <SmallDefaultUser />
