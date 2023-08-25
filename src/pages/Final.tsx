@@ -9,7 +9,6 @@ import { useNavigate } from 'react-router';
 import { useRef } from 'react';
 
 const Final = () => {
-  const navigate = useNavigate();
   const handleDeepLink = () => {
     // window.location.replace('https://www.instagram.com/create/story'); //지금 없음
     // 함수가 실행되면 모바일 환경에서 인스타그램 앱으로 넘어감
@@ -85,17 +84,6 @@ const PositiveBtn = styled.button`
   box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.25);
   background: ${({ theme }) => theme.colors.deepred};
   width: 16.2rem;
-  height: 5.7rem;
-`;
-const NormalBtn = styled.button`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 1.4rem;
-  border-radius: 1.4rem;
-  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.25);
-  background: ${({ theme }) => theme.colors.white};
-  width: 33.4rem;
   height: 5.7rem;
 `;
 
