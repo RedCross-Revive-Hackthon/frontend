@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import Volunteer1 from '../../assets/images/volunteer1.png';
 import Volunteer2 from '../../assets/images/volunteer2.png';
 import Volunteer3 from '../../assets/images/volunteer3.png';
@@ -13,9 +14,15 @@ const VolunteerList = () => {
     <VolunteerListWrapper>
       <StyledImage src={Volunteer1} />
       <StyledImage src={Volunteer2} />
-      <StyledImage src={Volunteer3} />
-      <StyledImage src={Volunteer4} />
-      <StyledImage src={Volunteer5} />
+      <Link to="https://redcross.campaignus.me/hawaii">
+        <StyledImage src={Volunteer3} />
+      </Link>
+      <Link to="https://redcross.campaignus.me/present">
+        <StyledImage src={Volunteer4} />
+      </Link>
+      <Link to="https://redcross.campaignus.me/goldenlunchbox">
+        <StyledImage src={Volunteer5} />
+      </Link>
       <StyledImage src={Volunteer6} />
       <StyledImage src={Volunteer7} />
       <StyledImage src={Volunteer8} />
